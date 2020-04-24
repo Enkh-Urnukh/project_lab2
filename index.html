@@ -1,0 +1,28 @@
+
+<html>
+    <head>
+        <title>Solar System</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src = "js/three.min.js"></script>    
+        <script src = "js/OrbitControls.js"></script> 
+        <script src="https://threejs.org/examples/js/controls/TransformControls.js"></script>
+        
+    </head>
+    <body>
+        <div><button class="button buttonDec" id="dec" onclick="decreaseSpeed()">Decrease speed</button>
+             <button class="button buttonInc" id="inc" onclick="increaseSpeed()">Increase speed</button>
+             <span class="span" id="speed"></span>
+             <button class="button buttonChange" id="inc" onclick=window.location.href='/solar/real.html'>Change to real size</button>
+             <span class="span" id="dropdown">Orbit color:
+                 <select onchange="colorChange(this)"><option value="red">red</option>
+                        <option value="blue">blue</option>
+                        <option value="gray">gray</option>
+                        <option value="yellow">yellow</option>
+                </select>
+            </span>
+        </div>
+   
+    </body> 
+</html>
+<script src = "js/solar_abstract.js"></script> 
